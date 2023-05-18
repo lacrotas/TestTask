@@ -1,0 +1,25 @@
+@import './styles/header.scss';
+@import './styles/UI.scss';
+@import './styles/footer.scss';
+@import './styles/katalog.scss';
+@import './styles/news.scss';
+@import './styles/contacts.scss';
+@import './styles/slider.scss';
+@import './styles/advantages.scss';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+}
+
+.katalog_enable,
+.advantages_enable,
+.news_disable,
+.item_image-bottom-mini,
+.contact_disable {
+    display: none;
+}

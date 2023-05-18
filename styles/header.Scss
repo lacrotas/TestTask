@@ -1,0 +1,206 @@
+.header {
+    width: 100%;
+    height: 123px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
+
+    .header_navigation {
+        display: flex;
+        align-items: center;
+        margin-left: 72px;
+
+        @media (max-width: 1250px) {
+            margin-left: 20px;
+        }
+
+        .header_logo {
+            width: 70px;
+            height: 70px;
+            margin-right: 60px;
+
+            @media (max-width: 1250px) {
+                margin-right: 20px;
+            }
+        }
+
+        .navigation_anhor {
+            font-size: 15px;
+            text-decoration: none;
+            font-family: 'RobotoReg';
+            color: #292D32;
+            margin-right: 45px;
+
+            &:hover {
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            @media (max-width: 1250px) {
+                margin-right: 20px;
+                font-size: 12px;
+            }
+        }
+
+        .navigation_search {
+            margin-left: 5.74px;
+        }
+    }
+
+    .header_icons {
+        display: inline;
+        margin-right: 44px;
+
+        .icon_item {
+            margin-right: 26px;
+            width: 49px;
+            height: 49px;
+
+            &:hover {
+                filter: invert(0.2);
+                cursor: pointer;
+            }
+
+            @media (max-width: 1050px) {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+            }
+        }
+
+        .item_container-shop {
+            display: inline;
+            position: relative;
+            text-align: center;
+
+            .icon_item-paragraph {
+                position: absolute;
+                top: -46px;
+                right: 26px;
+                font-size: 12px;
+                width: 16px;
+                height: 16px;
+                text-decoration: none;
+                font-family: 'RobotoReg';
+                color: #FFF;
+                border-radius: 20px;
+                background-color: #48A4EB;
+
+                @media (max-width: 1050px) {
+                    top: -30px;
+                    right: 16px;
+                    font-size: 10px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+
+        .icon_item-last {
+            position: relative;
+        }
+    }
+}
+
+.header-small {
+    height: 75px;
+    padding-top: 15px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: none;
+
+    @media (max-width: 800px) {
+        display: block;
+    }
+
+    .header_logo {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-left: 15px;
+    }
+
+    .header_icons {
+        display: flex;
+        align-items: center;
+        float: right;
+        position: relative;
+        top: 6px;
+
+        &:hover {
+            filter: invert(0.2);
+            cursor: pointer;
+        }
+
+        .icon_item {
+            margin-right: 15px;
+        }
+
+        .icon_item-people {
+            margin-right: 13px;
+        }
+
+        .icon_item-wifi {
+            margin-right: 13.4px;
+        }
+
+        .icon_item-search {
+            margin-right: 24.8px;
+        }
+        .item_container-shop {
+            display: inline;
+            position: relative;
+            text-align: center;
+
+            .icon_item-paragraph {
+                position: absolute;
+                top: -12px;
+                right: 15px;
+                font-size: 12px;
+                width: 16px;
+                height: 16px;
+                text-decoration: none;
+                font-family: 'RobotoReg';
+                color: #FFF;
+                border-radius: 20px;
+                background-color: #48A4EB;
+            }
+        }
+    }
+}
+
+.header_navigation-small {
+    width: calc(100% - 38px);
+    height: 331px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 12;
+    top: 90px;
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 59px;
+    padding-left: 38px;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+
+    .navigation_anhor {
+        font-size: 15px;
+        text-decoration: none;
+        font-family: 'RobotoReg';
+        color: #292D32;
+        margin-bottom: 45px;
+
+        &:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+}
