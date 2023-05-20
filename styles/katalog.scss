@@ -7,6 +7,170 @@
     gap: 20px 40px;
     grid-template-columns: repeat(3, 440px);
 
+    .katalog_section-text {
+        width: 440px;
+        height: 371px;
+
+        .section_label {
+            font-size: 50px;
+            font-family: 'RobotoReg';
+            color: #292D32;
+            line-height: 1;
+        }
+
+        .section_paragraph {
+            line-height: 1.5;
+            margin-top: 35px;
+            font-size: 18px;
+            font-family: 'RobotoLight';
+            color: #838383;
+        }
+
+        .button_katalog {
+            margin-top: 44px;
+
+            .button_label {
+                margin-left: 12px;
+                letter-spacing: 0.7px;
+            }
+        }
+    }
+
+    .katalog_section-item {
+        position: relative;
+        background-color: #F2F2F2;
+        width: 440px;
+        height: 371px;
+        border-radius: 20px;
+
+        .item_counter {
+            font-family: 'RobotoThin';
+            font-size: 25px;
+            color: #292D32;
+            padding-top: 23px;
+            padding-left: 40px;
+        }
+
+        .item_image {
+            position: absolute;
+        }
+
+        .item_image-notepad {
+            top: -5px;
+            left: 15px;
+        }
+
+        .item_image-computer {
+            top: -17px;
+            left: 112px;
+        }
+
+        .item_image-disk {
+            top: 93px;
+            left: 52px;
+        }
+
+        .item_image-dell {
+            top: 72px;
+            left: 75px;
+        }
+
+        .item_image-parts {
+            top: 50px;
+            left: 87px;
+        }
+
+        .item_paragraph {
+            font-family: 'RobotoLight';
+            font-size: 18px;
+            color: #838383;
+            margin-top: 195px;
+            margin-left: 40px;
+        }
+
+        .item_label {
+            font-size: 25px;
+            font-family: 'RobotoReg';
+            color: #292D32;
+            margin-left: 40px;
+        }
+    }
+
+    .katalog_section-item-first {
+        .item_paragraph {
+            margin-top: 190px;
+        }
+
+        .item_label {
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    .katalog_section-item-second {
+        .item_paragraph {
+            margin-top: 195px;
+        }
+
+        .item_label {
+            position: relative;
+            top: -10px;
+        }
+    }
+
+    .katalog_section-item-third {
+        .item_counter {
+            position: relative;
+            top: 10px;
+        }
+
+        .item_paragraph {
+            margin-top: 200px;
+        }
+
+        .item_label {
+            position: relative;
+            top: -5px;
+        }
+
+    }
+
+    .katalog_section-item-fourth {
+        .item_counter {
+            position: relative;
+            top: 10px;
+        }
+
+        .item_paragraph {
+            margin-top: 200px;
+        }
+
+        .item_label {
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    .katalog_section-item-fifth {
+        .item_counter {
+            position: relative;
+            top: 10px;
+        }
+
+        .item_paragraph {
+            margin-top: 200px;
+        }
+
+        .item_label {
+            position: relative;
+            top: -5px;
+        }
+
+    }
+}
+
+/*adaptive*/
+.main_article-katalog {
     @media (max-width: 1500px) {
         grid-template-columns: repeat(2, 440px);
         margin-left: calc(50% - 440px);
@@ -27,8 +191,6 @@
     }
 
     .katalog_section-text {
-        width: 440px;
-        height: 371px;
 
         @media (max-width: 500px) {
             width: 345px;
@@ -36,11 +198,6 @@
         }
 
         .section_label {
-            font-size: 50px;
-            font-family: 'RobotoReg';
-            color: #292D32;
-            line-height: 1;
-
             @media (max-width: 500px) {
                 .katalog_disable {
                     display: none;
@@ -57,11 +214,6 @@
         }
 
         .section_paragraph {
-            line-height: 1.5;
-            margin-top: 35px;
-            font-size: 18px;
-            font-family: 'RobotoLight';
-            color: #838383;
 
             @media (max-width: 500px) {
                 margin-top: 20px;
@@ -77,13 +229,7 @@
             }
         }
 
-        .section_button {
-            margin-top: 28px;
-        }
-
         .button_katalog {
-            margin-top: 44px;
-
             @media (max-width: 500px) {
                 .button_image {
                     width: 45px;
@@ -101,12 +247,6 @@
     }
 
     .katalog_section-item {
-        position: relative;
-        background-color: #F2F2F2;
-        width: 440px;
-        height: 371px;
-        border-radius: 20px;
-
         @media (max-width: 500px) {
             width: 345px;
             height: 290.9px;
@@ -114,12 +254,6 @@
         }
 
         .item_counter {
-            font-family: 'RobotoThin';
-            font-size: 25px;
-            color: #292D32;
-            padding-top: 23px;
-            padding-left: 40px;
-
             @media (max-width: 500px) {
                 font-size: 20px;
                 padding-top: 2px;
@@ -127,14 +261,7 @@
             }
         }
 
-        .item_image {
-            position: absolute;
-        }
-
         .item_image-notepad {
-            top: -5px;
-            left: 15px;
-
             @media (max-width: 500px) {
                 width: 302px;
                 height: 178px;
@@ -142,9 +269,6 @@
         }
 
         .item_image-computer {
-            top: -17px;
-            left: 112px;
-
             @media (max-width: 500px) {
                 width: 210px;
                 height: 193px;
@@ -154,9 +278,6 @@
         }
 
         .item_image-disk {
-            top: 93px;
-            left: 52px;
-
             @media (max-width: 500px) {
                 width: 264.24px;
                 height: 107.42px;
@@ -166,9 +287,6 @@
         }
 
         .item_image-dell {
-            top: 72px;
-            left: 75px;
-
             @media (max-width: 500px) {
                 width: 226.24px;
                 height: 124.67px;
@@ -178,9 +296,6 @@
         }
 
         .item_image-parts {
-            top: 50px;
-            left: 87px;
-
             @media (max-width: 500px) {
                 width: 253.26px;
                 height: 167.01px;
@@ -190,12 +305,6 @@
         }
 
         .item_paragraph {
-            font-family: 'RobotoLight';
-            font-size: 18px;
-            color: #838383;
-            margin-top: 195px;
-            margin-left: 40px;
-
             @media (max-width: 500px) {
                 font-size: 15px;
                 margin-top: 159px;
@@ -205,11 +314,6 @@
         }
 
         .item_label {
-            font-size: 25px;
-            font-family: 'RobotoReg';
-            color: #292D32;
-            margin-left: 40px;
-
             @media (max-width: 500px) {
                 font-size: 20px;
                 margin-left: 20px;
@@ -218,15 +322,6 @@
     }
 
     .katalog_section-item-first {
-        .item_paragraph {
-            margin-top: 190px;
-        }
-
-        .item_label {
-            position: relative;
-            top: -5px;
-        }
-
         @media (max-width: 500px) {
             height: 275px;
 
@@ -247,45 +342,21 @@
     }
 
     .katalog_section-item-second {
-        .item_paragraph {
-            margin-top: 195px;
-        }
-
-        .item_label {
-            position: relative;
-            top: -10px;
-        }
-
         @media (max-width: 500px) {
             top: -32px;
-            
+
             .item_label {
                 position: relative;
                 top: 6px;
             }
+
             .item_paragraph {
                 margin-top: 173px;
             }
         }
-
-      
     }
 
     .katalog_section-item-third {
-        .item_counter {
-            position: relative;
-            top: 10px;
-        }
-
-        .item_paragraph {
-            margin-top: 200px;
-        }
-
-        .item_label {
-            position: relative;
-            top: -5px;
-        }
-
         @media (max-width: 500px) {
             width: 345px;
             height: 275px;
@@ -314,20 +385,6 @@
     }
 
     .katalog_section-item-fourth {
-        .item_counter {
-            position: relative;
-            top: 10px;
-        }
-
-        .item_paragraph {
-            margin-top: 200px;
-        }
-
-        .item_label {
-            position: relative;
-            top: -5px;
-        }
-
         @media (max-width: 500px) {
             top: -7px;
 
@@ -349,20 +406,6 @@
     }
 
     .katalog_section-item-fifth {
-        .item_counter {
-            position: relative;
-            top: 10px;
-        }
-
-        .item_paragraph {
-            margin-top: 200px;
-        }
-
-        .item_label {
-            position: relative;
-            top: -5px;
-        }
-
         @media (max-width: 500px) {
             width: 345px;
             height: 275px;
